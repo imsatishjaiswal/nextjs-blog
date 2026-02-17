@@ -7,7 +7,7 @@ export const metadata = {
 };
 function about() {
   return (
-    <div>about us</div>
+    <div>about us page</div>
   )
 }
 

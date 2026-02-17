@@ -1,5 +1,5 @@
 // "use client"
-import { useParams } from 'next/navigation.js'
+// import { useParams } from 'next/navigation.js'
 import React from 'react'
 
 // function BlogDetails() {
@@ -10,8 +10,9 @@ import React from 'react'
 //   )
 // }
 
-async function BlogDetails({param}) {
-const id = await param;
+async function BlogDetails({params}) {
+ const resolveParam = await params;
+const {id} = resolveParam;
    return (
     <>
     <div>blog Details {id}</div>
